@@ -22,17 +22,32 @@
   .intro { margin-top: 80px; text-align: justify; }
 
   /* Couvertures de revues */
-  .covers { display: flex; gap: 100px; margin-top: 54px; align-items: flex-start; }
+  .covers { display: flex; flex-wrap: wrap; gap: 50px; margin-top: 54px; align-items: flex-start; }
   .covers figure { margin: 0; }
-  .covers img { display: block; width: 250px; height: 328px; }
-  .covers img.epj { width: 254px; height: 325px; }
-  .covers figcaption { margin-top: 18px; color: #333; text-align: center; }
+  .covers img { display: block; width: 150px; height: 197px; }
+  .covers img.epj { width: 152px; height: 195px; }
+  .covers figcaption { margin-top: 12px; color: #333; text-align: center; font-size: 0.75em; }
 
   h2 { font-size: 1.2em; margin: 100px 0 60px; }
   .publications p { margin: 0 0 16px; }
   .publications a { margin-left: 0.4em; }
   .publications b a { font-weight: normal; }
   h2.older { margin: 64px 0 16px; }
+
+  /* Petits écrans (téléphones) */
+  @media (max-width: 600px) {
+    body { margin: 16px 16px 40px; }
+    .header { flex-direction: column; }
+    .header img { width: 120px; height: 182px; }
+    .header .contact { margin: 20px 0 0; }
+    .intro { margin-top: 30px; text-align: left; }
+    .covers { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 12px; margin-top: 30px; }
+    .covers figure { text-align: center; }
+    .covers img { margin: 0 auto; }
+    h2 { margin: 50px 0 24px; }
+    h2.older { margin: 40px 0 12px; }
+    .publications p { overflow-wrap: anywhere; }
+  }
 </style>
 </head>
 <body>
@@ -45,12 +60,12 @@
     Gulliver Laboratory<br>
     Adjunct Professor of Mathematics<br>
     ESPCI, Paris</p>
-    <p>elie.raphael(AT)espci.fr</p>
+    <p>elie.raphael(AT)espci.psl.eu</p>
   </div>
 </div>
 
 <div class="intro">
-  <p>I work at <a href="http://www.gulliver.espci.fr/">UMR Gulliver 7083</a>, a laboratory located at the The City of Paris Industrial Physics and Chemistry Higher Educational Institution <a href="http://www.espci.fr/">ESPCI</a>.</p>
+  <p>I work at <a href="http://www.gulliver.espci.fr/">UMR Gulliver 7083</a>, a laboratory located at the City of Paris Industrial Physics and Chemistry Higher Educational Institution <a href="http://www.espci.fr/">ESPCI</a>.</p>
   <p>My research focuses on the physics of soft matter and interfaces. In particular, I am interested in the behavior of polymers at interfaces, elastocapillarity phenomena, the propagation of capillary gravity waves, and the dynamics of granular materials.</p>
   <p>I am a Fellow of the American Physical Society (2015).</p>
   <p>For my teaching activities at ESPCI, see <a href="maths1A.html">here</a>.</p>
@@ -80,19 +95,19 @@
 
   <p><b>Spreading and adsorption of silicone oil droplets on silicone elastomer films</b><br>
     L. Dutcher, B. Baylis, J. Dutcher, E. Raphael, K. Dalnoki-Veress<br>
-    <i>The European Physical Journal E</i>, 49:25 (2026)</p>
+    <i>The European Physical Journal E</i>, 49:25 (2026) <a href="Publications/Speading_absorption_silicon_oil_droplets.pdf">PDF</a></p>
 
   <p><b>Stationary and transient correlations in driven electrolytes</b><br>
     H. Bonneau, V. Démery, E. Raphael<br>
     <i>Journal of Statistical Physics,</i> (2025) 033201 <a href="Publications/Stationary_and_transient_correlations_in_driven_electrolytes.pdf">PDF</a></p>
 
   <p><b>Swelling and evaporation determine surface morphology of grafted hydrogel thin films</b><br>
-    C. Kopecz_Muller, C. Gaunand, T. Tran, M. Labouse, E. Raphael, T. Salez, F. Box, J. D. McGraw<br>
+    C. Kopecz-Muller, C. Gaunand, T. Tran, M. Labouse, E. Raphael, T. Salez, F. Box, J. D. McGraw<br>
     <i>Langmuir,</i> 41 (4) (2025) 2400-2410 <a href="Publications/Swelling_and_evaporation_determine_surface_morphology.pdf">PDF</a></p>
 
   <p><b>Studies on V-formation and echelon flight utilizing flapping-wing drones</b><br>
     J. Martinez-Ponce, B. Herkenhoff, A. Aboelezz, C. Urban, S. Armanini, E. Raphael, M. Hassanalian<br>
-    <i>Drones,</i> 4 (2024) 395</p>
+    <i>Drones,</i> 4 (2024) 395 <a href="Publications/Studies_on_V_Formation_and_echelon_flight_utilizing_flapping_wing_drones.pdf">PDF</a></p>
 
   <p><b>Directed droplet motion along thin fibers</b><br>
     H. Khattak, A. Shanzeelaa, E. Raphael, K. Dalnoki-Veress<br>
@@ -115,7 +130,7 @@
     <i>Physical Review Research,</i> 5 (2023) 013089 <a href="Publications/Microscopic_foundation_of_the_mu(I)_rheology.pdf">PDF</a></p>
 
   <p><b>Nanoparticle Taylor dispersion near charged surfaces with an open boundary</b><br>
-    A. Vilquin, V. Bertin, E. Raphael, D. S. Dean D., T. Salez, J. D. McGraw<br>
+    A. Vilquin, V. Bertin, E. Raphael, D. S. Dean, T. Salez, J. D. McGraw<br>
     <i>Physical Review Letters,</i> 130 (2023) 038201 <a href="Publications/Nanopaticle_Taylor_Dispersion_Near.pdf">PDF</a></p>
 
   <p><b>Enhanced dip coating on a soft substrate</b><br>
@@ -124,7 +139,7 @@
 
   <p><b>Contactless rheology of soft gels over a broad frequency range</b><br>
     Z. Zhang, M. Arshad, V. Bertin, S. Almohamad, E. Raphael, T. Salez, A. Maali<br>
-    <i>Physical Review Applied,</i> 17 (2022) 064045 <a href="Publications/Contactless_rheology_of_soft_gels">PDF</a></p>
+    <i>Physical Review Applied,</i> 17 (2022) 064045 <a href="Publications/Contactless_rheology_of_soft_gels.pdf">PDF</a></p>
 
   <p><b>Soft-lubrication interactions between a rigid sphere and an elastic wall</b><br>
     V. Bertin, Y. Amarouchene, E. Raphael, T. Salez<br>
@@ -193,11 +208,11 @@
 
   <p><b>Unsteady wave pattern generated by water striders</b><br>
     T. Steinmann, M. Arutkin, P. Cochard, E. Raphael, J. Casas, M. Benzaquen<br>
-    <i>Journal of Fluid Mechanics</i> 848 (2018) 370 <a href="Publications/Unsteady_wave_pattern_generation">PDF</a></p>
+    <i>Journal of Fluid Mechanics</i> 848 (2018) 370 <a href="Publications/Unsteady_wave_pattern_generation.pdf">PDF</a></p>
 
   <p><b>Elastowetting of soft hydrogel spheres</b><br>
     A. Chakrabarti, A. Porat, E. Raphael, T. Salez, M. K. Chaudhury<br>
-    <i>Langmuir</i>, 34 (2018) 3894-3900 <a href="Publications/Elastowetting_of_Soft">PDF</a></p>
+    <i>Langmuir</i>, 34 (2018) 3894-3900 <a href="Publications/Elastowetting_of_Soft.pdf">PDF</a></p>
 
   <p><b>Adhesion-induced fingering instabilities in thin elastic films under strain</b><br>
     B. Davis-Purcell, P. Soulard, T. Salez, E. Raphael, K. Dalnoki-Veress<br>
@@ -257,7 +272,7 @@
 
   <p><b>Slip-mediated dewetting of polymer microdroplets</b><br>
     J. D. McGraw, T. S. Chan, S. Maurer, T. Salez, M. Benzaquen, E. Raphael, M. Brinkmann, K. Jacobs<br>
-    <i>Proceedings of the National Academy of Sciences,</i> 133 no. 5 (2016) 1168-1173 <a href="Publications/Slip_mediated_dewetting.pdf">PDF</a></p>
+    <i>Proceedings of the National Academy of Sciences,</i> 113 no. 5 (2016) 1168-1173 <a href="Publications/Slip_mediated_dewetting.pdf">PDF</a></p>
 
   <p><b>Self-amplification of solid friction in interleaved assemblies</b><br>
     H. Alarcon, T. Salez, C. Poulard, J.-F. Bloch, E. Raphael, K. Dalnoki-Veress, F. Restagno<br>
@@ -269,7 +284,7 @@
 
   <p><b>Universal contact-line dynamics at the nanoscale</b><br>
     M. Rivetti, T. Salez, M. Benzaquen, E. Raphael, and O. Bäumchen<br>
-    <i>Soft Matter</i>, 11 (2015) 9247-9253 <a href="Publications/Universal_contact_line_dynamics_at_the_nanoscale">PDF</a></p>
+    <i>Soft Matter</i>, 11 (2015) 9247-9253 <a href="Publications/Universal_contact_line_dynamics_at_the_nanoscale.pdf">PDF</a></p>
 
   <p><b>Symmetry plays a key role in the erasing of patterned surface features</b><br>
     M. Benzaquen, M. Ilton, M. V. Massa, T. Salez, P. Fowler, E. Raphael, K. Dalnoki-Veress<br>
@@ -284,7 +299,7 @@
     <i>Proceedings of the National Academy of Sciences,</i> 112 (2015) 8227 <a href="Publications/Cooperative_strings.pdf">PDF</a></p>
 
   <p><b>Influence of Slip on the Plateau-Rayleigh Instability on a Fibre</b><br>
-    S. Haefner, M. Benzaquen, 0. Bäumchen, T. Salez, R. Peters, J. D. McGraw, K. Jacobs, E. Raphael, K. Dalnoki-Veress,<br>
+    S. Haefner, M. Benzaquen, O. Bäumchen, T. Salez, R. Peters, J. D. McGraw, K. Jacobs, E. Raphael, K. Dalnoki-Veress<br>
     <i>Nature Communications,</i> 6 (2015) 7409 <a href="Publications/Influence_of_Slip.pdf">PDF</a></p>
 
   <p><b>Indentation of a rigid sphere into an elastic substrate with surface tension and adhesion</b><br>
@@ -293,14 +308,14 @@
 
   <p><b>Approach to universal self-similar attractor for the levelling of thin liquid films</b><br>
     M. Benzaquen, P. Fowler, L. Jubin, T. Salez, K. Dalnoki-Veress, E. Raphael<br>
-    <i>Soft Matter</i>, 10 (2014) 8608-8614 <a href="Publications/Approach_to_universal_self">PDF</a></p>
+    <i>Soft Matter</i>, 10 (2014) 8608-8614 <a href="Publications/Approach_to_universal_self.pdf">PDF</a></p>
 
   <p><b>Wake pattern and wave resistance for anisotropic moving objects</b><br>
     A. Darmon, M. Benzaquen, E. Raphael<br>
     <i>Physics of Fluids</i>, 26 (2014) 092106-(1-7) <a href="Publications/Wake_pattern_and_wave_resistance.pdf">PDF</a></p>
 
   <p><b>Transport properties of overheated electrons trapped on a Helium surface</b><br>
-    F. Closa, E. Raphael, A.D. Chepelianskii,<br>
+    F. Closa, E. Raphael, A.D. Chepelianskii<br>
     <i>European Physical Journal B</i>, 87 (2014) 190 <a href="Publications/Transport_properties.pdf">PDF</a></p>
 
   <p><b>Viscoelastic effects and anomalous transient levelling exponents in thin films</b><br>
@@ -315,16 +330,16 @@
     M. Backholm, M. Benzaquen, T. Salez, E. Raphael, K. Dalnoki-Veress<br>
     <i>Soft Matter</i>, 10 (2014), 2550-2558 <a href="Publications/Capillary_levelling_of_a_cylindrical_hole.pdf">PDF</a></p>
 
-  <p><b>Kelvin wake pattern at large Froud numbers</b><br>
+  <p><b>Kelvin wake pattern at large Froude numbers</b><br>
     A. Darmon, M. Benzaquen, E. Raphael<br>
-    <i>Journal of Fluids Mechanics Rapids</i>, 738 (2014) <a href="Publications/Kelvin_wake_pattern.pdf">PDF</a></p>
+    <i>Journal of Fluid Mechanics Rapids</i>, 738 (2014) <a href="Publications/Kelvin_wake_pattern.pdf">PDF</a></p>
 
   <p><b>Electro-hydrodynamic instability of stressed viscoelastic polymer films</b><br>
     F. Closa, E. Raphael, F. Ziebert<br>
     <i>European Physical Journal E</i>, 36 (2013) 124-(1-9) <a href="Publications/Electro_hydrodynamic_instability.pdf">PDF</a></p>
 
   <p><b>Relaxation and Intermediate Asymptotics of a Rectangular Trench in a Viscous Film</b><br>
-    0. Bäumchen, M. Benzaquen, T. Salez, J. D. McGraw, M. Backholm, P. Fowler, E. Raphael, K. Dalnoki-Veress,<br>
+    O. Bäumchen, M. Benzaquen, T. Salez, J. D. McGraw, M. Backholm, P. Fowler, E. Raphael, K. Dalnoki-Veress<br>
     <i>Physical Review E,</i> 88 (2013) 035001-(1-5) <a href="Publications/Relaxation_and_intermediate_asymptotics.pdf">PDF</a></p>
 
   <p><b>From adhesion to wetting of a soft particle</b><br>
@@ -332,11 +347,11 @@
     <i>Soft Matter</i>, 9 (2013), 10699-10704 <a href="Publications/From_adhesion_to_wetting.pdf">PDF</a></p>
 
   <p><b>Intermediate Asymptotics of the Capillary-Driven Thin Film Equation</b><br>
-    M. Benzaquen, T. Salez, E. Raphael,<br>
+    M. Benzaquen, T. Salez, E. Raphael<br>
     <i>European Physical Journal E</i>, 36 (2013) 82-(1-7) <a href="Publications/Intermediate_asymptotics.pdf">PDF</a></p>
 
   <p><b>Capillary leveling of stepped films with inhomogeneous molecular mobility</b><br>
-    J. D. McGraw, T. Salez, 0. Bäumchen, E. Raphael, K. Dalnoki-Veress<br>
+    J. D. McGraw, T. Salez, O. Bäumchen, E. Raphael, K. Dalnoki-Veress<br>
     <i>Soft Matter</i>, 9 (2013) 8297–8305 <a href="Publications/Capillary_leveling_of_stepped.pdf">PDF</a></p>
 
   <p><b>Liquid Hertz Contact: softness of weakly deformed drops on non-wetting substrates</b><br>
@@ -344,11 +359,11 @@
     <i>Europhysics Letters,</i> 100 (2012) 54002-(1-5) <a href="Publications/Liquid_Hertz.pdf">PDF</a></p>
 
   <p><b>Numerical solutions of thin film equations for polymer flows</b><br>
-    T. Salez, J. D. McGraw, S. L. Cormier, 0. Bäumchen, K. Dalnoki-Veress, E. Raphael<br>
+    T. Salez, J. D. McGraw, S. L. Cormier, O. Bäumchen, K. Dalnoki-Veress, E. Raphael<br>
     <i>European Physical Journal E</i>, 35 (2012) 114 <a href="Publications/Numerical_solutions_of_thin_film.pdf">PDF</a></p>
 
   <p><b>Capillary-driven flow induced by a stepped perturbation atop a viscous film</b><br>
-    T. Salez, J. D. McGraw, 0. Bäumchen, K. Dalnoki-Veress, E. Raphael<br>
+    T. Salez, J. D. McGraw, O. Bäumchen, K. Dalnoki-Veress, E. Raphael<br>
     <i>Physics of Fluids</i>, 24 (2012) 102111-(1-12) <a href="Publications/Capillary_driven_flow.pdf">PDF</a></p>
 
   <p><b>Beyond Tanner's Law: Crossover Between Spreading Regimes of a Viscous Droplet on an Identical Film</b><br>
@@ -356,7 +371,7 @@
     <i>Physical Review Letters</i>, 109 (2012) 154501-(1-5) <a href="Publications//Beyond_Tanner.pdf">PDF</a></p>
 
   <p><b>Self-Similarity and Energy Dissipation in Stepped Polymer Films</b><br>
-    J. D. McGraw, T. Salez, 0. Bäumchen, E. Raphael, K. Dalnoki-Veress<br>
+    J. D. McGraw, T. Salez, O. Bäumchen, E. Raphael, K. Dalnoki-Veress<br>
     <i>Physical Review Letters</i>, 109 (2012) 128303-(1-5) <a href="Publications/Self_Similarity_and_Energy.pdf">PDF</a></p>
 
   <p><b>Effects of in-plane elastic stress and normal electric stress on viscoelastic thin film stability</b><br>
@@ -404,7 +419,7 @@
     <i>Langmuir,</i> 26 (2010) 3257-3260 <a href="Publications/SimpleView.pdf">PDF</a></p>
 
   <p><b>Tuning Microcapsules Surface Morphology Using Blends of Homo and Copolymers of PLGA and PLGA-PEG</b><br>
-    E. Pisani, C. Ringard, V. Nicolas, E. Raphaël, V. Rosilio, L. Moine, E. Fattal, N. Tsapis<br>
+    E. Pisani, C. Ringard, V. Nicolas, E. Raphael, V. Rosilio, L. Moine, E. Fattal, N. Tsapis<br>
     <i>Soft Matter</i> 5 (2009) 3054-3060 <a href="Publications/Tuning_microcapsule.pdf">PDF</a></p>
 
   <p><b>Dewetting of Thin Polymer Films: Influence of Interface Evolution</b><br>
@@ -429,7 +444,7 @@
 
   <p><b>Dewetting as an investigative tool for studying properties of thin polymer films</b><br>
     G. Reiter, S. Al Akhrass, M. Hamieh, P. Damman, S. Gabriele, T. Vilmin, E. Raphael<br>
-    <i>European Physical Journal J</i>, 166 (2009) 165–172 <a href="Publications/Dewetting_as_a_tool.pdf">PDF</a></p>
+    <i>European Physical Journal ST</i>, 166 (2009) 165–172 <a href="Publications/Dewetting_as_a_tool.pdf">PDF</a></p>
 </div>
 
 <h2 class="older">Older publications</h2>
